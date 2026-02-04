@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Stories Clone</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="stories-header" id="storiesContainer">
+        <!-- Stories will be dynamically added here -->
+    </div>
+
+    <div class="empty-state" id="emptyState">
+        <h2>No stories yet</h2>
+        <p>Click the + button to add your first story!</p>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <div class="upload-modal" id="uploadModal">
+        <h3>Add to your story</h3>
+        <input type="file" accept="image/*" id="imageInput" class="upload-input">
+        <button onclick="uploadStory()" id="uploadBtn" class="upload-btn" disabled>Upload Story</button>
+        <button onclick="closeUploadModal()" class="cancel-btn">Cancel</button>
+    </div>
+
+    <div class="story-viewer" id="storyViewer">
+        <div class="story-progress-container" id="progressContainer">
+            <!-- Progress bars will be dynamically added here -->
+        </div>
+        <div class="story-content">
+            <div class="story-info">
+                <img class="story-info-avatar" id="viewerAvatar" src="" alt="">
+                <div>
+                    <div id="viewerUsername">username</div>
+                    <div id="viewerTime">Just now</div>
+                </div>
+            </div>
+            <div class="story-close" onclick="closeStoryViewer()">×</div>
+            <img class="story-viewer-image" id="viewerImage" src="" alt="">
+            <div class="story-nav prev" onclick="prevStory()"></div>
+            <div class="story-nav next" onclick="nextStory()"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
