@@ -16,7 +16,7 @@ A complete client-side implementation of Instagram Stories with 24-hour auto-exp
 ## 🚀 Live Demo
 https://github.com/VinodGouri/insta-story-clone
 
-
+https://github.com/users/VinodGouri/projects
 ## 🛠️ Tech Stack
 - HTML5, CSS3, JavaScript (ES6)
 - LocalStorage API for data persistence
